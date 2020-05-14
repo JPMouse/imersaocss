@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('eng.jpg') ;
+    background-size: cover;
+    font-family: 'Lobster', cursive;
+    height: 100vh;
+    font-size: 10px;
+}
+
+@media (min-width: 400px){
+    body {
+        font-size: 14px;
+    }
+}
+header{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    background-color: rgb(245, 245, 245, 0.5);
+    background-size: cover;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    height:40px
+}
+.menu li {
+    list-style: none;
+}
+.menu a{
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 1s, color 1s;
+}
+
+.menu a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+a {
+    color: rgb(114, 117, 115);
+    text-decoration: none;
+}
+
+.a:hover{
+    text-decoration: underline;
+}
+
+/*.titulo {
+    transform: matrix(2)
+    animation: linear 2s animacaotitulo;
+}
+
+@keyframes animacaotitulo {
+    100% {
+
+    }
+}*/
+
+.site-subtitle,
+.site-title {
+    color:rgb(94, 100, 97);
+    text-align: center;
+}
+
+.site-title {
+    font-size: 4em;
+    font-family: 'Indie Flower', cursive;
+    line-height: 2.4em;
+}
+.site-subtitle {
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+}
+
+.portfolio h2 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.portfolio {
+    background-color: rgb(245, 245, 245, 0.5);
+    padding: 2em;
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 2em;
+    text-align: center;
+}
+
+@media (min-width: 560px) {
+    .portfolio .grid {
+        grid-template-columns: 240px 240px;
+        height: 50vh;
+    }
+    .portfolio .grid_icon {
+        grid-template-rows: 0px 0px;
+    }
+}
+
+@media (min-width: 880px) {
+    .portfolio .grid {
+        grid-template-columns: repeat(3, 240px);
+        align-content: center;
+        justify-content: center;
+        height: calc(100vh - 4em - 48px);
+    }
+}
+
+.img-portfolio {
+    width: 180px;
+    height: 180px;
+    font-size: 2em;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 500ms;
+    
+}
+
+.img-portfolio:hover {
+    transform: scale(1.5);
+}
+
+.contato h2 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.contato .icons {
+    text-align: center;
+}
+
+.contato a {
+    color: black;
+    font-size: 4em;
+    transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 4px 4px rgb(52, 53, 53);
+}
+
+

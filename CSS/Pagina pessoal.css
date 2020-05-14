@@ -7,6 +7,7 @@
 body {
     background-image: url('eng.jpg') ;
     background-size: cover;
+    background-attachment: fixed;
     font-family: 'Lobster', cursive;
     height: 100vh;
     font-size: 10px;
@@ -18,7 +19,7 @@ body {
     }
 }
 header{
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,7 +78,6 @@ a {
 .site-title {
     color:rgb(94, 100, 97);
     text-align: center;
-    
 }
 
 .site-title {
@@ -97,7 +97,6 @@ a {
 .portfolio {
     background-color: rgb(245, 245, 245, 0.5);
     padding: 2em;
-    height: 100vh;
 }
 
 .portfolio .grid {

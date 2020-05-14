@@ -18,7 +18,7 @@ body {
     }
 }
 header{
-    height: 50vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,6 +30,7 @@ header{
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 1;
 }
 
 .menu ul {
@@ -44,6 +45,12 @@ header{
 .menu a{
     display: block;
     padding: 10px 20px;
+    transition: background-color 1s, color 1s;
+}
+
+.menu a:hover {
+    background-color: black;
+    color: whitesmoke;
 }
 
 a {
@@ -51,15 +58,26 @@ a {
     text-decoration: none;
 }
 
-a:haver{
+.a:hover{
     text-decoration: underline;
 }
+
+/*.titulo {
+    transform: matrix(2)
+    animation: linear 2s animacaotitulo;
+}
+
+@keyframes animacaotitulo {
+    100% {
+
+    }
+}*/
 
 .site-subtitle,
 .site-title {
     color:rgb(94, 100, 97);
     text-align: center;
-    animation-fill-mode: backwards ;
+    
 }
 
 .site-title {
@@ -85,11 +103,16 @@ a:haver{
 .portfolio .grid {
     display: grid;
     gap: 2em;
+    text-align: center;
 }
 
 @media (min-width: 560px) {
     .portfolio .grid {
         grid-template-columns: 240px 240px;
+        height: 50vh;
+    }
+    .portfolio .grid_icon {
+        grid-template-rows: 0px 0px;
     }
 }
 
@@ -110,6 +133,7 @@ a:haver{
     object-position: center;
     border-radius: 10px;
     cursor: pointer;
+    transition: transform 500ms;
     
 }
 
@@ -117,11 +141,24 @@ a:haver{
     transform: scale(1.5);
 }
 
+.contato h2 {
+    font-family: 'Press Start 2P', cursive;
 }
 
-/*@media (min-width: 1200px) {
-    .img-portfolio {
-        height: auto;
-        width: 100%;
-    }
-}*/
+.contato .icons {
+    text-align: center;
+}
+
+.contato a {
+    color: black;
+    font-size: 4em;
+    transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 4px 4px rgb(52, 53, 53);
+}
+
+

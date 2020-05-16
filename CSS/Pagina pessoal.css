@@ -8,9 +8,9 @@ body {
     background-image: url('eng.jpg') ;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Lobster', cursive;
+    font-family: 'Montserrat Subrayada', sans-serif;
     height: 100vh;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 @media (min-width: 400px){
@@ -36,8 +36,8 @@ header{
 
 .menu ul {
     display: flex;
-    justify-content: space-around;
-    font-size: 30px;
+    justify-content: space-evenly;
+    font-size: 28px;
     height:40px
 }
 .menu li {
@@ -63,17 +63,6 @@ a {
     text-decoration: underline;
 }
 
-/*.titulo {
-    transform: matrix(2)
-    animation: linear 2s animacaotitulo;
-}
-
-@keyframes animacaotitulo {
-    100% {
-
-    }
-}*/
-
 .flip-card {
     perspective: 1000px;
 }
@@ -81,7 +70,7 @@ a {
 .titulo {
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 3s;
+    transition: transform 1.5s;
     backface-visibility: hidden;
 }
 
@@ -100,31 +89,31 @@ a {
 
 .site-title {
     font-size: 7em;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Special Elite', cursive;
     
     background-color:  rgb(253, 253, 253, 0);
     
 }
 .site-subtitle {
+    text-align: center;
     background-color: rgb(253, 253, 253, 0);
-    font-size: 4em;
+    font-size: 2em;
     font-style: italic;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Special Elite', cursive;
     transform: rotateY(180deg);
     position: absolute;
 }
 
-.sobre,
 .portifolio {
     padding: 2em;
     min-height: 100vh;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Patrick Hand SC', cursive;
 }
 
 .sobre h2,
 .contato h2,
 .portfolio h2 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Fredericka the Great', cursive;
     margin-bottom: 1.5em;
     font-size: 2em;
 }
@@ -137,6 +126,13 @@ a {
     }
 }
 
+.sobre {
+    padding: 2em;
+    min-height: 50vh;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.4em;
+}
+
 .sobre .avatar {
     float: right;
     margin-left: 2em;
@@ -145,9 +141,8 @@ a {
 .img-sobre {
     width: 200px;
     height: 200px;
-    clip-path: polygon(80% 0, 80% 52%, 100% 82%, 80% 78%, 80% 100%, 0 100%, 0 0);
-    rotate: 90deg;
-    object-fit: fill; 
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+
 }
 
 .sobre a{
@@ -213,6 +208,11 @@ a {
 
 .contato .icons {
     text-align: center;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
 }
 
 .contato a {
